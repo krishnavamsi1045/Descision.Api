@@ -35,3 +35,10 @@ jobs:
 
       - name: Push Docker image
         run: docker push helloworldgrouptregistry.azurecr.io/decision:latest
+
+      - name: Deploy to Azure Container App
+        run: |
+          az containerapp update \
+            --name randome \
+            --resource-group firstgroup \
+            --image helloworldgrouptregistry.azurecr.io/decision:latest
