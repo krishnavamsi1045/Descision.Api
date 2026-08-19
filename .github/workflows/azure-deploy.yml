@@ -22,3 +22,12 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+
+      - name: Login to ACR
+        run: az acr login --name helloworldgrouptregistry
+
+      - name: Tag Docker image
+        run: docker tag decision:latest helloworldgrouptregistry.azurecr.io/decision:latest
+
+      - name: Push Docker image
+        run: docker push helloworldgrouptregistry.azurecr.io/decision:latest
