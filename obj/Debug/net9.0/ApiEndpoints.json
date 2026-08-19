@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Descision.Api.Controllers.WeatherForecastController",
+    "Method": "Desision",
+    "RelativePath": "WeatherForecast/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Descision.Api.Controllers.WeatherForecastController",
+    "Method": "Sayhai",
+    "RelativePath": "WeatherForecast/hai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
